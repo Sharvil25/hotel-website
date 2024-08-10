@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Dancing+Script:wght@400..700&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sedan+SC&display=swap");
+
+:root {
+  --orange: #894f2d;
+  --faint-orange: #eac17a;
+}
+
+body {
+  font-family: "Bellota", system-ui !important;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.section-name {
+  color: var(--orange);
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+p {
+  font-weight: 600;
+}

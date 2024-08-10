@@ -1,0 +1,13 @@
+<div class="grid-container">
+  <img
+    *ngFor="let image of images"
+    [src]="image"
+    alt="Image"
+    class="grid-image"
+    (click)="openImage(image)"
+  />
+</div>
+
+<div class="overlay" *ngIf="selectedImage" (click)="closeImage()">
+  <img [src]="selectedImage" alt="Zoomed Image" class="zoomed-image" />
+</div>
