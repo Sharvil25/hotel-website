@@ -1,0 +1,17 @@
+<section>
+  <div class="container py-5">
+    <h1 class="section-name">TESTIMONIALS</h1>
+    <div class="row">
+      <div class="col-lg-4 mb-3" *ngFor="let testimonial of testimonials">
+        <div class="testimonial">
+          <p><i class="fa-solid fa-quote-left"></i></p>
+          <p>- {{ testimonial.desc }}</p>
+          <p>
+            {{ testimonial.name }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr />
+</section>

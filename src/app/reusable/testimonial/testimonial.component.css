@@ -1,0 +1,14 @@
+section {
+  background-color: var(--faint-orange);
+}
+.section-name {
+  color: white;
+}
+.testimonial {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+.testimonial i {
+  font-size: 40px;
+}

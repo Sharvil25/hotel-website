@@ -1,0 +1,46 @@
+.imgDiv {
+  width: min(100%, 450px);
+  background: url(../../../assets/images/menu2.png);
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.menu-lists {
+  height: 300px;
+  overflow-y: scroll;
+}
+.menu-lists * {
+  font-weight: bold;
+}
+
+.menu-lists::-webkit-scrollbar {
+  width: 6px;
+}
+
+.menu-lists::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.menu-lists::-webkit-scrollbar-thumb {
+  background: var(--faint-orange);
+}
+
+.menu-lists::-webkit-scrollbar-thumb:hover {
+  background: var(--faint-orange);
+}
+.menu-lists li {
+  border-bottom: 1px dashed var(--faint-orange);
+  padding-bottom: 10px;
+}
+.menu-lists li::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--faint-orange);
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}

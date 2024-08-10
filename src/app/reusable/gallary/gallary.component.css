@@ -1,0 +1,33 @@
+.gallary-col {
+  columns: 4;
+  column-gap: 20px;
+}
+
+.gallary-col .col-img {
+  width: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.gallary-col .col-img:hover {
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .gallary-col {
+    columns: 3;
+    column-gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .gallary-col {
+    columns: 2;
+    column-gap: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .gallary-col {
+    columns: 1;
+    column-gap: 20px;
+  }
+}

@@ -1,0 +1,8 @@
+.about-image {
+  width: min(100%, 450px);
+  transition: all 0.5s ease;
+}
+
+.about-image:hover {
+  scale: 1.1;
+}

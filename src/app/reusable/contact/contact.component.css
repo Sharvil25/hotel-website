@@ -1,0 +1,40 @@
+section {
+  background: url(../../../assets/images/contactus-bg.png);
+  background-size: cover;
+  background-position: center center;
+}
+section * {
+  color: white;
+}
+
+.form-control {
+  background-color: transparent !important;
+  border-radius: 0;
+  border: 2px solid white;
+}
+.form-control::placeholder {
+  color: white;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+
+button {
+  background-color: var(--orange) !important;
+  border: none;
+  padding: 10px 20px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+}
+.social-icon i {
+  color: black;
+  font-size: 20px;
+}

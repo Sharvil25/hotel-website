@@ -1,0 +1,41 @@
+<section>
+  <div class="container py-5">
+    <h1 class="section-name">GALLERY</h1>
+    <div class="gallary-col">
+      <img
+        class="col-img"
+        [src]="image"
+        alt=""
+        *ngFor="let image of images"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        (click)="chageImg(image)"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary">Launch demo modal</button> -->
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <img
+          [src]="currentImg"
+          alt=""
+          class="w-100"
+          style="border-radius: 10px"
+        />
+      </div>
+    </div>
+  </div>
+</div>
